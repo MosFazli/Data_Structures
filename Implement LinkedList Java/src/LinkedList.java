@@ -56,6 +56,11 @@ public class LinkedList {
 
 // This function using for print all elements of linked list
     public void printElements(){
+        // Check if LinkedList is empty return nothing
+        if(head == null){
+            return;
+        }
+
         // using a auxiliary node to iterative linked list
         Node current = head;
         while (current.next != null){
